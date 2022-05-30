@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Traductor.css">
+    <title>Traductor</title>
+
+</head>
+<body>
+    <script  src="Traductor.js"></script>
+     <div  action="">
+        <div>
+            <h2>Traductor de ARM a lenguaje máquina</h2>
+            <h3>El conjunto de instrucciones elegida es una fracción del
+                conjunto de instrucciones denominado ARMv8 de la empresa
+                ARM Holdings PLC que fue anunciado en 2011.</h3>
+            <h3>Instrucciones:</h3>
+            <h4>ADD X1,X2,X3</h4> 
+            <h4>SUB X1,X2,X3</h4> 
+            <h4>ADDI X1,X2,#10</h4>
+            <h4>SUBI X1,[X2,#10]</h4>
+            <h4>STUR X1,[X2,#10]</h4>
+            <h4>LDUR X1,[X2,#10]</h4>
+            <h4>CBZ X1,X2</h4>
+            <h4>CBNZ X1,X2</h4>
+            <h4>BL X1</h4>
+            <h4>BR X1,X2,X2</h4>
+            <h4>B X10</h4>
+            <p></p>
+        </div>
+        <div>
+            <input class="boton" type="button"   value="Traducir codigo"  onclick="leerTexto()">
+        </div>
+        <div class="contenedor">
+             <textarea class="codigo"  id="codigo" ></textarea> 
+             <div class="respuesta"  id="respuesta"></div>
+        </div>
+      
+    </div>
+</body>
+</html>
